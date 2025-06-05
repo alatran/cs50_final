@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Exercise
+{% endblock %}
+
+{% block main %}
+<div id="exercise-background">
+<h2>For how long did you exercise last?</h2>
+<h3>If a field is not applicable, please enter 0.</h3>
+<form action="/exercise" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto" style="width: 100px;" min="0" max="24" name="hours_exercise" placeholder="Hours" type="number">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto" style="width: 100px;" min="0" max="59" name="minutes_exercise" placeholder="Minutes" type="number">
+    </div>
+    <div class="center-button">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+{% endblock %}

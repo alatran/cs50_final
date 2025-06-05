@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Affirmations
+{% endblock %}
+
+{% block main %}
+
+<div class="center-body" id="affirmations-background">
+{% if rand_int == 1 %}
+    <h2>Mistakes are lessons, not failures.</h2>
+{% elif rand_int == 2 %}
+    <h2>I'm better than I used to be. Better than I was yesterday. But hopefully not as good as I'll be tomorrow.</h2>
+    <p>- Marianne Williamson</p>
+{% elif rand_int == 3 %}
+    <h2>I am a magnet for love and positivity.</h2>
+{% elif rand_int == 4 %}
+    <h2>I breathe in confidence, and I exhale fear.</h2>
+{% else %}
+    <h2>Don't limit your challenges. Challenge your limits.</h2>
+{% endif %}
+</div>
+
+{% endblock %}

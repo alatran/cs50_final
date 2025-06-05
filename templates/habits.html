@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Habits
+{% endblock %}
+
+{% block main %}
+<div id="habits-background">
+<h1>{{name}}'s Habits</h1>
+<h2>Sleep</h2>
+<h3>All Time Average Sleep: {{s_avg}} hours</h3>
+{% if s_avg is not none %}
+    {% if s_avg < 7 %}
+        <p>You should consider getting more sleep. Adults sleep for 7-9 hours a night.</p>
+    {% else %}
+        <p>Keep getting the sleep you need!</p>
+    {% endif %}
+{% else %}
+    <p>Sleep data is not available.</p>
+{% endif %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Hours of Sleep Recorded</th>
+            <th class="text-end">Date</th>
+        </tr>
+    </thead>
+   <tbody>
+
+    {% for dict in sleep_date %}
+            <tr>
+                <td class="text-start entry">{{dict["hours_sleep"]}}</td>
+                <td class="text-end">{{dict["date"]}}</td>
+            </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+
+<h2>Exercise</h2>
+<h3>All Time Average Exercise: {{e_avg}} minutes</h3>
+{% if e_avg is not none %}
+    {% if e_avg < 30 %}
+        <p>You should consider getting more exercise. Adults should try to exercise for 30 minutes a day.</p>
+    {% else %}
+        <p>Keep getting the exercise you need!</p>
+    {% endif %}
+{% else %}
+    <p>Exercise data is not available.</p>
+{% endif %}
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th class="text-start">Hours of Exercise Recorded</th>
+        <th class="text-end">Minutes of Exercise Recorded</th>
+        <th class="text-end">Date</th>
+     </tr>
+</thead>
+    <tbody>
+        {% for dict in exercise_date %}
+            <tr>
+                <td class="text-start entry">{{dict["hours_exercise"]}}</td>
+                <td class="text-end">{{dict["minutes_exercise"]}}</td>
+                <td class="text-end">{{dict["date"]}}</td>
+            </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Screen Time</h2>
+<h3>All Time Average Screen Time: {{sc_avg}} minutes</h3>
+{% if sc_avg is not none %}
+    {% if sc_avg > 120 %}
+        <p>You should consider using your devices less. Adults should try to use their devices for only 1-2 hours a day outside of work.</p>
+    {% else %}
+        <p>You're doing great!</p>
+    {% endif %}
+{% else %}
+    <p>Screen time data is not available.</p>
+{% endif %}
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th class="text-start">Hours of Screen Time Recorded</th>
+        <th class="text-end">Minutes of Screen Time Recorded</th>
+        <th class="text-end">Date</th>
+     </tr>
+</thead>
+    <tbody>
+        {% for dict in screen_date %}
+            <tr>
+                <td class="text-start entry">{{dict["hours_screen"]}}</td>
+                <td class="text-end">{{dict["minutes_screen"]}}</td>
+                <td class="text-end">{{dict["date"]}}</td>
+            </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

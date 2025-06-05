@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Entries
+{% endblock %}
+
+{% block main %}
+<div id="entries-background">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Journal Entry</th>
+            <th class="text-end">Date</th>
+        </tr>
+    </thead>
+   <tbody>
+
+    {% for dict in entry_date %}
+            <tr>
+                <td class="text-start entry">{{dict["entry"]}}</td>
+                <td class="text-end">{{dict["date"]}}</td>
+            </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Journal
+{% endblock %}
+
+{% block main %}
+<div id="journal-background">
+<h2>Record your thoughts, feelings, highs, and lows in your journal.</h2>
+<form action="/journal" method="post" class="journal">
+    <textarea name="entry" rows="4" cols="70" placeholder="Start Journaling Here"></textarea>
+    <div class="center-button">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,147 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia";
+}
+
+div {
+    width: 100%;
+    height: 100%;
+}
+
+#index-background {
+    background-image: url('aura.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.entry {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 200px; /* Adjust the width as needed */
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    width: 200px;
+}
+
+td {
+    width: 200px;
+}
+
+.journal {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+}
+
+#journal-background {
+    background: linear-gradient(to bottom, #ADD8E6, #DAB1DA)
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #FFB6C1 !important;
+    color: black !important;
+    border: 2px #AA336A !important;
+}
+
+button:hover {
+    background-color: #e75480 !important;
+    color: white !important;
+    border: 2px #AA336A !important;
+}
+
+.center-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#affirmations-background {
+    background-image: url('blue_aura.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#entry {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.margins {
+    margin-top: 10px;
+}
+
+#sleep-background {
+    background: linear-gradient(to bottom, #CDEBC5, #DEF3FD);
+}
+
+#exercise-background {
+    background: linear-gradient(to bottom, #FCF7DE, #FDDFDF);
+}
+
+#screen-background {
+    background: linear-gradient(to bottom, #E9CCED, #FCC7D9);
+}
+
+#entries-background {
+    background: linear-gradient(to bottom, #FF9967, #E2A7D9);
+}
+
+#habits-background {
+    background: linear-gradient(to bottom, #B5E2FF, #FFFFFF);
+}
+
+#outside-backgrounds {
+    background: linear-gradient(to bottom, #FFF4BC, #FFC0CB);
+}

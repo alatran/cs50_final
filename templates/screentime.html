@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Screentime
+{% endblock %}
+
+{% block main %}
+<div id="screen-background">
+<h2>How long were you on your devices for last?</h2>
+<h3>If a field is not applicable, please enter 0.</h3>
+<form action="/screentime" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto" style="width: 100px;" min="0" max="24" name="hours_screen" placeholder="Hours" type="number">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto" style="width: 100px;" min="0" max="59" name="minutes_screen" placeholder="Minutes" type="number">
+    </div>
+    <div class="center-button">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+{% endblock %}

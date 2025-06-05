@@ -1,0 +1,12 @@
+---
+:id: 295737060
+:submitters:
+- :name: Angela Tran
+  :email: angelatran@college.harvard.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2024-12-08 21:59:55.896888000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2024-12-08 13:59:55.896888000 Z
+:status: processed
+:score: 21.0
